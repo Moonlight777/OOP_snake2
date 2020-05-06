@@ -1,0 +1,13 @@
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\bin\Debug\netcoreapp3.1\OOP_snake2.exe
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\bin\Debug\netcoreapp3.1\OOP_snake2.deps.json
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\bin\Debug\netcoreapp3.1\OOP_snake2.runtimeconfig.json
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\bin\Debug\netcoreapp3.1\OOP_snake2.runtimeconfig.dev.json
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\bin\Debug\netcoreapp3.1\OOP_snake2.dll
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\bin\Debug\netcoreapp3.1\OOP_snake2.pdb
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.csprojAssemblyReference.cache
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.dll
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.pdb
+C:\Users\Admin\Source\Repos\OOP_snake2\OOP_snake2\obj\Debug\netcoreapp3.1\OOP_snake2.genruntimeconfig.cache
