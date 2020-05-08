@@ -11,16 +11,21 @@ namespace OOP_snake2
             
         {
            
-
-        Point p1 = new Point(1, 3, '*'); // constructor. That called encapsulation. In object-oriented programming (OOP), encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.[1] Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them. Publicly accessible methods are generally provided in the class (so-called "getters" and "setters") to access the values, and other client classes call these methods to retrieve and modify the values within the object.
+            Point p1 = new Point(1, 3, '*'); // constructor. That called encapsulation. In object-oriented programming (OOP), encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.[1] Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them. Publicly accessible methods are generally provided in the class (so-called "getters" and "setters") to access the values, and other client classes call these methods to retrieve and modify the values within the object.
             p1.Draw();
-
-          //  Point p5;
 
             Point p2 = new Point(4, 5, '%'); // Point is an object
             p2.Draw();
 
-            List<int> numList = new List<int>();
+            HorizontallLine line = new HorizontallLine(5, 10, 8, '+');
+            line.Draw();
+
+            Verticalline line2 = new Verticalline(7, 12, 10,'$');
+            line2.Draw();
+
+            Console.ReadLine();
+
+         /*   List<int> numList = new List<int>();
             numList.Add(0);
             numList.Add(1);
             numList.Add(2);
@@ -73,7 +78,7 @@ namespace OOP_snake2
 
             Console.WriteLine(pList);
 
-           
+           */
 
 
 
