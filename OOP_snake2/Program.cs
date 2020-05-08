@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics.SymbolStore;
 
@@ -14,11 +15,87 @@ namespace OOP_snake2
         Point p1 = new Point(1, 3, '*'); // constructor. That called encapsulation. In object-oriented programming (OOP), encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.[1] Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them. Publicly accessible methods are generally provided in the class (so-called "getters" and "setters") to access the values, and other client classes call these methods to retrieve and modify the values within the object.
             p1.Draw();
 
-            Point p5;
+          //  Point p5;
 
-            Point p2 = new Point(4, 5, '%');
+            Point p2 = new Point(4, 5, '%'); // Point is an object
             p2.Draw();
 
+            List<int> numList = new List<int>();
+            numList.Add(0);
+            numList.Add(1);
+            numList.Add(2);
+
+            int x = numList[0];
+            int y = numList[1];
+            int z = numList[2];
+
+            foreach (int i in numList)
+            {
+                Console.WriteLine(i);
+            }
+
+            numList.RemoveAt(0); // remove something from list
+
+            List<char> charList = new List<char>();
+            charList.Add('&');
+            charList.Add('^');
+            charList.Add('%');
+
+            char x4 = charList[0];
+            char x2 = charList[1];
+            char x3 = charList[2];
+
+            Console.WriteLine(x3);
+
+
+            Point p10 = new Point(7,7,'$');
+            p10.Draw();
+
+            Point p11 = new Point(6, 6, '(');
+            p11.Draw();
+
+            Point p12 = new Point(8, 8, ')');
+            p12.Draw();
+
+            Point p13 = new Point(9, 9, '^');
+            p13.Draw();
+
+            List<Point> p2List = new List<Point>();
+            p2List.Add(p10);
+            p2List.Add(p11);
+            p2List.Add(p12);
+            p2List.Add(p13);
+
+
+            List<Point> pList = new List<Point>();
+            pList.Add(p1);
+            pList.Add(p2);
+
+            Console.WriteLine(pList);
+
+           
+
+
+
+
+          //  Console.WriteLine(p1);
+
+          //  Point(1,3,'^') = pList[p1];
+
+
+         /*   foreach (Point i2 in pList)
+            {
+                Console.WriteLine(i2);
+            }
+
+
+
+
+            Console.ReadLine();
+
+
+/* Homework for RAM lesson
+ * 
             Point p3 = new Point(9, 12, '$');
         //    p3 = Point.Create();
             p3.Draw();
@@ -39,7 +116,7 @@ namespace OOP_snake2
 
             Console.ReadLine();
 
-
+*/
             /*  p1.x = 1;
           p1.y = 3;
           p1.sym = '*'; */

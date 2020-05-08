@@ -6,22 +6,22 @@ namespace OOP_snake2
 {
     class Point // class
     {
-        public int x; // was public
+        public int x; // data
         public int y;
         private char sym;
 
-        public Point()
+        public Point() // constructor
         {
         }
 
-        public Point(int _x, int _y, char _sym)
+        public Point(int _x, int _y, char _sym) // constructor2
         {
             x = _x;
             y = _y;
             sym = _sym;
         }
 
-        public void Draw() // method
+        public void Draw() // method for Points
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
