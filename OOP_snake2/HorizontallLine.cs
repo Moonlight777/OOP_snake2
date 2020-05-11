@@ -5,10 +5,8 @@ using System.Text;
 
 namespace OOP_snake2
 {
-    class HorizontallLine
+    class HorizontallLine : Figure // That's inharitance
     {
-        List<Point> pList;
-
         public HorizontallLine(int xLeft, int xRight, int y, char sym)
         {
             pList = new List<Point>();
@@ -23,9 +21,6 @@ namespace OOP_snake2
 
         }
 
-
-
-
          /*
             Point p1 = new Point(4, 4, '*');
             Point p2 = new Point(5, 4, '*');
@@ -36,13 +31,5 @@ namespace OOP_snake2
 
           */
         
-
-        public void Draw()
-        {
-            foreach (Point p in pList)
-            {
-                p.Draw();
-            }
         }
     }
-}
