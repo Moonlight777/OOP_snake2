@@ -20,23 +20,53 @@ namespace OOP_snake2
             y = _y;
             sym = _sym;
         }
+    
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            sym = p.sym;
+        }
+
+        public void Move(int offset, Direction direction)
+        {
+            if (direction == Direction.RIGHT)
+            {
+                x = x + offset;
+            }
+            else if (direction == Direction.LEFT)
+            {
+                x = x - offset;
+            }
+            else if (direction == Direction.UP)
+            {
+                y = y + offset;
+            }
+            else if (direction == Direction.DOWN)
+            {
+                y = y - offset;
+            }
+
+        }
 
         public void Draw() // method for Points
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
+    
         public void Func1(int value)
         {
             value = value + 1; // X will be +1
         }
 
-        public void Move(Point p, int dx, int dy)
+     /*   public void Move(Point p, int dx, int dy)
         {
             p.x = p.x + dx;
             p.y = p.y + dy;
         }
 
+    */
         public void Reset(Point p)
         {
             p = new Point(); // that will not reset ram cause it's just a duplicate of variable

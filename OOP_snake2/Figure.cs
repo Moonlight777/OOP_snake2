@@ -9,7 +9,7 @@ namespace OOP_snake2
 
        protected  List<Point> pList;
 
-        public void Draw()
+        public void Drow()
         {
             foreach (Point p in pList)
             {
