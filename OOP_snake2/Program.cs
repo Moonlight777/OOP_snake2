@@ -9,11 +9,11 @@ namespace OOP_snake2
     class Program
     {
         static void Main(string[] args)
-            
+
         {
-           Console.SetWindowSize(1, 1); // Windows size
-           Console.SetBufferSize(80, 25);
-           Console.SetWindowSize(80, 25);
+            Console.SetWindowSize(1, 1); // Windows size
+            Console.SetBufferSize(80, 25);
+            Console.SetWindowSize(80, 25);
 
             /*    Point p1 = new Point(1, 3, '*'); // constructor. That called encapsulation. In object-oriented programming (OOP), encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.[1] Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them. Publicly accessible methods are generally provided in the class (so-called "getters" and "setters") to access the values, and other client classes call these methods to retrieve and modify the values within the object.
                 p1.Draw();
@@ -22,7 +22,7 @@ namespace OOP_snake2
                 p2.Draw();
             */
             // Drawing borders
-            HorizontallLine upLine = new HorizontallLine(0,78,0, '+');
+            HorizontallLine upLine = new HorizontallLine(0, 78, 0, '+');
             HorizontallLine downLine = new HorizontallLine(0, 78, 24, '+');
             Verticalline leftLine = new Verticalline(0, 24, 0, '+');
             Verticalline rightLine = new Verticalline(0, 24, 78, '+');
@@ -33,12 +33,34 @@ namespace OOP_snake2
 
             // Drawing Points
 
-            Point p = new Point(4,5,'*');
-            p.Draw();
+            Point p = new Point(4, 5, '*');
+            // p.Draw();
 
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Drow();
-            snake.Move();
+
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+                }
+
+                Thread.Sleep(100);
+                snake.Move();
+
+
+            }
+        }
+    }
+}
+
+
+
+
+
+        /*    snake.Move();
             Thread.Sleep(300);
             snake.Move();
             Thread.Sleep(300);
@@ -56,7 +78,7 @@ namespace OOP_snake2
             Thread.Sleep(300);
             snake.Move();
 
-
+        */
 
             /*  HorizontallLine line = new HorizontallLine(5, 10, 8, '+');
               line.Draw();
@@ -64,7 +86,7 @@ namespace OOP_snake2
               Verticalline line2 = new Verticalline(7, 12, 10,'$');
               line2.Draw();
             */
-            Console.ReadLine();
+   
 
          /*   List<int> numList = new List<int>();
             numList.Add(0);
@@ -207,7 +229,3 @@ namespace OOP_snake2
        }
 
       */
-
-        }
-    }
-}
