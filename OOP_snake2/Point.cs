@@ -54,6 +54,12 @@ namespace OOP_snake2
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
+
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
     
         public void Func1(int value)
         {

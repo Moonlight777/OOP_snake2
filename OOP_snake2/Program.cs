@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics.SymbolStore;
+using System.Threading;
 
 namespace OOP_snake2
 {
@@ -37,14 +38,32 @@ namespace OOP_snake2
 
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Drow();
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
 
 
-          /*  HorizontallLine line = new HorizontallLine(5, 10, 8, '+');
-            line.Draw();
 
-            Verticalline line2 = new Verticalline(7, 12, 10,'$');
-            line2.Draw();
-          */
+            /*  HorizontallLine line = new HorizontallLine(5, 10, 8, '+');
+              line.Draw();
+
+              Verticalline line2 = new Verticalline(7, 12, 10,'$');
+              line2.Draw();
+            */
             Console.ReadLine();
 
          /*   List<int> numList = new List<int>();
