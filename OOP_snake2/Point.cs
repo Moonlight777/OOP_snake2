@@ -8,7 +8,7 @@ namespace OOP_snake2
     {
         public int x; // data
         public int y;
-        private char sym;
+        public char sym;
 
         public Point() // constructor
         {
@@ -47,6 +47,11 @@ namespace OOP_snake2
                 y = y + offset;
             }
 
+        }
+
+        public bool IsHit(Point p)
+        {
+            return p.x == this.x && p.y == this.y;
         }
 
         public void Draw() // method for Points
