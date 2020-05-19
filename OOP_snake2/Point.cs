@@ -71,21 +71,9 @@ namespace OOP_snake2
             value = value + 1; // X will be +1
         }
 
-     /*   public void Move(Point p, int dx, int dy)
-        {
-            p.x = p.x + dx;
-            p.y = p.y + dy;
-        }
-
-    */
         public void Reset(Point p)
         {
             p = new Point(); // that will not reset ram cause it's just a duplicate of variable
-           
-            //// p.x = 0; // that will reset ram to null
-           //   p.y = 0;
-           // Console.WriteLine("Resetting");
-           // Console.WriteLine("new x = " + p.x + " new y = " + p.y);
            
         }
 
